@@ -38,7 +38,7 @@
                 <h2 class="font-bold text-3xl ">P-Ticket</h2>
             </div>
             <div>
-                <ul class="flex gap-10 ">
+                <ul class="lg:flex gap-10 hidden">
                     <li>Home</li>
                     <li>About</li>
                     <li>Destination</li>
@@ -51,11 +51,11 @@
         </nav>
         <div class="bg-[url(./images/banner.png)] bg-no-repeat">
             <div class=" p-24 text-center">
-                <h1 class="text-6xl text-white ] font-raleway font-bold">End-to-End Travel with <br> <span class="text-primary">P Paribahan</span></h1>
+                <h1 class="text-4xl lg:text-6xl text-white ] font-raleway font-bold">End-to-End Travel with <br> <span class="text-primary">P Paribahan</span></h1>
                 <p class="text-white mt-10">Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .</p>
                 <button class="bg-[#1DD100] py-2 px-3 rounded-lg font-raleway mt-8 font-semibold " ><a href="#mainSection" >Buy Tickets</a></button>
             </div>
-            <div class="font-inter flex justify-center gap-10">
+            <div class="font-inter flex justify-center gap-10 flex-col lg:flex-row items-center">
                 <div class="flex items-center gap-2 p-8 bg-white max-w-[308px] justify-center border-b-[4px] rounded-xl border-b-[#1DD100]">
                     <img src="./images/people.png" alt="">
                     <div >
@@ -83,28 +83,28 @@
     <main class="" id="mainPageSections">
         <section class="mt-20 max-w-[1171px] mx-auto flex flex-col items-center ">
             <h1 class="text-center text-4xl font-bold font-raleway">Best offers for you</h1>
-            <div class="flex justify-between gap-6 ">
-                <div class="rounded-[15px] bg-[#FFBF0F] flex w-[573px] mt-10 items-center justify-center ">
+            <div class="flex justify-between gap-6 flex-col lg:flex-row ">
+                <div class="rounded-[15px] bg-[#FFBF0F] flex lg:w-[573px] w-full mt-10 items-center justify-center ">
                     <div class="font-inter px-3">
-                        <h1 class="text-[44px] font-extrabold">15% OFF</h1>
+                        <h1 class="lg:text-[44px] text-[35px] font-extrabold">15% OFF</h1>
                         <h3 class="text-xl font-semibold mt-2">on your next purchase</h3>
                         <h3 class="text-xl font-semibold mt-1 opacity-50">use by January 2024</h3>
                     </div>
                     <img src="./images/cupon-devider.png" alt="">
                     <div class="font-raleway">
-                        <h1 class="text-4xl font-bold">NEW15</h1>
+                        <h1 class="lg:text-4xl text-2xl font-bold">NEW15</h1>
                         <h3 class="text-xl font-semibold opacity-50 mt-3 ">Coupon code</h3>
                     </div>
                 </div>
-                <div class="rounded-[15px] bg-[#F78C9C] flex w-[573px] mt-10 items-center justify-center">
+                <div class="rounded-[15px] bg-[#F78C9C] flex lg:w-[573px] w-full mt-10 items-center justify-center">
                     <div class="font-inter px-3">
-                        <h1 class="text-[44px] font-extrabold">20% OFF</h1>
+                        <h1 class="lg:text-[44px] text-[35px] font-extrabold">20% OFF</h1>
                         <h3 class="text-xl font-semibold mt-2">on your next purchase</h3>
                         <h3 class="text-xl font-semibold mt-1 opacity-50">use by January 2024</h3>
                     </div>
                     <img src="./images/cupon-devider.png" alt="">
                     <div class="font-raleway">
-                        <h1 class="text-4xl font-bold">Couple 20</h1>
+                        <h1 class="lg:text-4xl text-2xl font-bold">Couple 20</h1>
                         <h3 class="text-xl font-semibold opacity-50 mt-3 ">Coupon code</h3>
                     </div>
                 </div>
@@ -115,20 +115,20 @@
             <div class=" pt-32">
                 <h1 class="text-center text-4xl font-bold font-raleway">P.H Paribahan</h1>
                 <p class="text-center mt-6">Yes, you can run unit tests and view the results directly within the app. <br> The integrated testing features allow for a streamlined .</p>
-                <div class="max-w-[1171px] mx-auto bg-white rounded-3xl  flex items-center justify-around mt-10">
+                <div class="max-w-[1171px] mx-auto bg-white rounded-3xl  flex items-center justify-around mt-10 flex-col lg:flex-row">
                     <div class="mt-20 p-8">
-                        <div class="flex justify-between items-center  ">
-                            <div class="flex items-center gap-3">
+                        <div class="flex justify-between items-center flex-col lg:flex-row   ">
+                            <div class="flex items-center gap-3 ">
                                 <img src="./images/bus-logo.png" alt="">
                                 <div>
                                     <h2>GreenLine Paribahan</h2>
                                     <p>couch-09-WEB ! AC_Business</p>
                                 </div>
                             </div>
-                            <button class=" flex items-center text-primary gap-2 border-solid border-[1px]  px-2 rounded-lg border-[#1DD100] text-lg bg-[#1cd1002f]"><img src="./images/seat-green.png" alt=""> <span id="remainingSeat">40</span>seats left</button>
+                            <button class="lg:mt-0 mt-10 flex items-center text-primary gap-2 border-solid border-[1px]  px-2 rounded-lg border-[#1DD100] text-lg bg-[#1cd1002f]"><img src="./images/seat-green.png" alt=""> <span id="remainingSeat">40</span>seats left</button>
                         </div>
-                        <div class="mt-10 justify-between  flex">
-                            <div class="bg-[#F7F8F8] p-8 rounded-2xl">
+                        <div class="mt-10 justify-between  flex ">
+                            <div class="bg-[#F7F8F8] p-8 rounded-2xl max-w-[350px] lg:max-w-max">
                                 <div class="flex justify-between font-raleway">
                                     <h3 class="opacity-60 font-semibold">Rout</h3>
                                     <h3 class="font-semibold">Dhaka-Sylet</h3>
@@ -155,16 +155,16 @@
                         
                         
                     </div>
-                    <img src="./images/info-devider.png" alt="" class="relative top-12">
-                    <div class="font-raleway text-center flex flex-col  items-center gap-3">
+                    <img src="./images/info-devider.png" alt="" class="relative top-12 hidden lg:flex ">
+                    <div class="font-raleway text-center flex flex-col  items-center gap-3 my-16 lg:my-0">
                         <img src="./images/fare.png" alt="">
                         <h1 class="text-4xl font-bold">550 Taka</h1>
                         <h2 class="text-xl opacity-40 font-bold">Per seat</h2>
                     </div>
                 </div>
             </div>
-            <div  id="mainSection" class="mt-10 max-w-[1171px] mx-auto flex  bg-white p-10 rounded-3xl gap-10">
-                <div class="w-[550px]">
+            <div  id="mainSection" class="mt-10 max-w-[1171px] mx-auto flex  bg-white p-10 rounded-3xl gap-10 flex-col lg:flex-row ">
+                <div class="lg:w-[550px] w-full">
                         <h2 class="text-3xl font-semibold">Select Your Seat</h2>
                     <div class="">
                         <hr class=" border-dashed  border-[1px] border-gray-300 my-5">
@@ -174,26 +174,26 @@
                         </div>
                         <hr class=" border-dashed  border-[1px] border-gray-300 my-5">
                         <div class="flex justify-end  ">
-                            <div class="bg-gray-300 px-8 py-2 rounded-lg w-28 text-center">
+                            <div class="bg-gray-300 px-8 py-2 rounded-lg w-12 lg:w-28text-center">
                                 <img src="./images/wheel.svg" alt="" class="mx-auto">
                             </div>
                             
                         </div>
-                        <div class="flex items-center justify-between mt-3">
+                        <div class="flex items-center justify-between mt-3 ">
                             <p>A</p>
                             <div class="flex gap-2">
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
+                                <div class="bg-gray-200 lg:px-10 lg:py-2  px-6 py-2 rounded-lg w-12 lg:w-28text-center seat">
                                     <p>A1</p>
                                 </div>
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
+                                <div class="bg-gray-200 lg:px-10 lg:py-2  px-6 py-2 rounded-lg  w-12 lg:w-28 text-center seat">
                                     <p>A2</p>
                                 </div>
                             </div>
                             <div class="flex gap-2">
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
+                                <div class="bg-gray-200 lg:px-10 lg:py-2  px-6 py-2 rounded-lg  w-12 lg:w-28 text-center seat">
                                     <p>A3</p>
                                 </div>
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
+                                <div class="bg-gray-200 lg:px-10 lg:py-2  px-6 py-2 rounded-lg  w-12 lg:w-28 text-center seat">
                                     <p>A4</p>
                                 </div>
                             </div>
@@ -202,18 +202,18 @@
                         <div class="flex items-center justify-between mt-3">
                             <p>B</p>
                             <div class="flex gap-2">
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
+                                <div class="bg-gray-200 lg:px-10 lg:py-2  px-6 py-2 rounded-lg  w-12 lg:w-28 text-center seat">
                                     <p>B1</p>
                                 </div>
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
+                                <div class="bg-gray-200 lg:px-10 lg:py-2  px-6 py-2 rounded-lg  w-12 lg:w-28 text-center seat">
                                     <p>B2</p>
                                 </div>
                             </div>
                             <div class="flex gap-2">
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
+                                <div class="bg-gray-200 lg:px-10 lg:py-2  px-6 py-2 rounded-lg w-12 lg:w-28text-center seat">
                                     <p>B3</p>
                                 </div>
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
+                                <div class="bg-gray-200 lg:px-10 lg:py-2  px-6 py-2 rounded-lg w-12 lg:w-28text-center seat">
                                     <p>B4</p>
                                 </div>
                             </div>
@@ -222,18 +222,18 @@
                         <div class="flex items-center justify-between mt-3">
                             <p>C</p>
                             <div class="flex gap-2">
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
+                                <div class="bg-gray-200 lg:px-10 lg:py-2  px-6 py-2 rounded-lg w-12 lg:w-28text-center seat">
                                     <p>C1</p>
                                 </div>
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
+                                <div class="bg-gray-200 lg:px-10 lg:py-2  px-6 py-2 rounded-lg w-12 lg:w-28text-center seat">
                                     <p>C2</p>
                                 </div>
                             </div>
                             <div class="flex gap-2">
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
+                                <div class="bg-gray-200 lg:px-10 lg:py-2  px-6 py-2 rounded-lg w-12 lg:w-28text-center seat">
                                     <p>C3</p>
                                 </div>
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
+                                <div class="bg-gray-200 lg:px-10 lg:py-2  px-6 py-2 rounded-lg w-12 lg:w-28text-center seat">
                                     <p>C4</p> 
                                 </div>
                             </div>
@@ -242,18 +242,18 @@
                         <div class="flex items-center justify-between mt-3">
                             <p>D</p>
                             <div class="flex gap-2">
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
+                                <div class="bg-gray-200 lg:px-10 lg:py-2  px-6 py-2 rounded-lg w-12 lg:w-28text-center seat">
                                     <p>D1</p>
                                 </div>
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
+                                <div class="bg-gray-200 lg:px-10 lg:py-2  px-6 py-2 rounded-lg w-12 lg:w-28text-center seat">
                                     <p>D2</p>
                                 </div>
                             </div>
                             <div class="flex gap-2">
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
+                                <div class="bg-gray-200 lg:px-10 lg:py-2  px-6 py-2 rounded-lg w-12 lg:w-28text-center seat">
                                     <p>D3</p>
                                 </div>
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
+                                <div class="bg-gray-200 lg:px-10 lg:py-2  px-6 py-2 rounded-lg w-12 lg:w-28text-center seat">
                                     <p>D4</p>
                                 </div>
                             </div>
@@ -262,18 +262,18 @@
                         <div class="flex items-center justify-between mt-3">
                             <p>E</p>
                             <div class="flex gap-2">
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
+                                <div class="bg-gray-200 lg:px-10 lg:py-2  px-6 py-2 rounded-lg w-12 lg:w-28text-center seat">
                                     <p>E1</p>
                                 </div>
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
+                                <div class="bg-gray-200 lg:px-10 lg:py-2  px-6 py-2 rounded-lg w-12 lg:w-28text-center seat">
                                     <p>E2</p>
                                 </div>
                             </div>
                             <div class="flex gap-2">
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
+                                <div class="bg-gray-200 lg:px-10 lg:py-2  px-6 py-2 rounded-lg w-12 lg:w-28text-center seat">
                                     <p>E3</p>
                                 </div>
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat" >
+                                <div class="bg-gray-200 lg:px-10 lg:py-2  px-6 py-2 rounded-lg w-12 lg:w-28text-center seat" >
                                     <p>E4</p>
                                 </div>
                             </div>
@@ -282,18 +282,18 @@
                         <div class="flex items-center justify-between mt-3">
                             <p>F</p>
                             <div class="flex gap-2">
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
+                                <div class="bg-gray-200 lg:px-10 lg:py-2  px-6 py-2 rounded-lg w-12 lg:w-28text-center seat">
                                     <p>F1</p>
                                 </div>
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
+                                <div class="bg-gray-200 lg:px-10 lg:py-2  px-6 py-2 rounded-lg w-12 lg:w-28text-center seat">
                                     <p>F2</p>
                                 </div>
                             </div>
                             <div class="flex gap-2">
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
+                                <div class="bg-gray-200 lg:px-10 lg:py-2  px-6 py-2 rounded-lg w-12 lg:w-28text-center seat">
                                     <p>F3</p>
                                 </div>
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
+                                <div class="bg-gray-200 lg:px-10 lg:py-2  px-6 py-2 rounded-lg w-12 lg:w-28text-center seat">
                                     <p>F4</p>
                                 </div>
                             </div>
@@ -302,18 +302,18 @@
                         <div class="flex items-center justify-between mt-3">
                             <p>G</p>
                             <div class="flex gap-2">
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
+                                <div class="bg-gray-200 lg:px-10 lg:py-2  px-6 py-2 rounded-lg w-12 lg:w-28text-center seat">
                                     <p>G1</p>
                                 </div>
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
+                                <div class="bg-gray-200 lg:px-10 lg:py-2  px-6 py-2 rounded-lg w-12 lg:w-28text-center seat">
                                     <p>G2</p>
                                 </div>
                             </div>
                             <div class="flex gap-2">
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
+                                <div class="bg-gray-200 lg:px-10 lg:py-2  px-6 py-2 rounded-lg w-12 lg:w-28text-center seat">
                                     <p>G3</p>
                                 </div>
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat" >
+                                <div class="bg-gray-200 lg:px-10 lg:py-2  px-6 py-2 rounded-lg w-12 lg:w-28text-center seat" >
                                     <p>G4</p>
                                 </div>
                             </div>
@@ -322,18 +322,18 @@
                         <div class="flex items-center justify-between mt-3">
                             <p>H</p>
                             <div class="flex gap-2">
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
+                                <div class="bg-gray-200 lg:px-10 lg:py-2  px-6 py-2 rounded-lg w-12 lg:w-28text-center seat">
                                     <p>H1</p>
                                 </div>
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
+                                <div class="bg-gray-200 lg:px-10 lg:py-2  px-6 py-2 rounded-lg w-12 lg:w-28text-center seat">
                                     <p>H2</p>
                                 </div>
                             </div>
                             <div class="flex gap-2">
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
+                                <div class="bg-gray-200 lg:px-10 lg:py-2  px-6 py-2 rounded-lg w-12 lg:w-28text-center seat">
                                     <p>H3</p>
                                 </div>
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
+                                <div class="bg-gray-200 lg:px-10 lg:py-2  px-6 py-2 rounded-lg w-12 lg:w-28text-center seat">
                                     <p>H4</p>
                                 </div>
                             </div>
@@ -342,18 +342,18 @@
                         <div class="flex items-center justify-between mt-3">
                             <p>I</p>
                             <div class="flex gap-2">
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
+                                <div class="bg-gray-200 lg:px-10 lg:py-2  px-6 py-2 rounded-lg w-12 lg:w-28text-center seat">
                                     <p>I1</p>
                                 </div>
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
+                                <div class="bg-gray-200 lg:px-10 lg:py-2  px-6 py-2 rounded-lg w-12 lg:w-28text-center seat">
                                     <p>I2</p>
                                 </div>
                             </div>
                             <div class="flex gap-2">
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
+                                <div class="bg-gray-200 lg:px-10 lg:py-2  px-6 py-2 rounded-lg w-12 lg:w-28text-center seat">
                                     <p>I3</p>
                                 </div>
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
+                                <div class="bg-gray-200 lg:px-10 lg:py-2  px-6 py-2 rounded-lg w-12 lg:w-28text-center seat">
                                     <p>I4</p>
                                 </div>
                             </div>
@@ -362,18 +362,18 @@
                         <div class="flex items-center justify-between mt-3">
                             <p>J</p>
                             <div class="flex gap-2">
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
+                                <div class="bg-gray-200 lg:px-10 lg:py-2  px-6 py-2 rounded-lg w-12 lg:w-28text-center seat">
                                     <p>J1</p>
                                 </div>
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
+                                <div class="bg-gray-200 lg:px-10 lg:py-2  px-6 py-2 rounded-lg w-12 lg:w-28text-center seat">
                                     <p>J2</p>
                                 </div>
                             </div>
                             <div class="flex gap-2">
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
+                                <div class="bg-gray-200 lg:px-10 lg:py-2  px-6 py-2 rounded-lg w-12 lg:w-28text-center seat">
                                     <p>J3</p>
                                 </div>
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
+                                <div class="bg-gray-200 lg:px-10 lg:py-2  px-6 py-2 rounded-lg w-12 lg:w-28text-center seat">
                                     <p>J4</p>
                                 </div>
                             </div>
@@ -447,21 +447,21 @@
         
         <footer class="bg-black text-white py-24">
             <div class="max-w-[1171px] mx-auto ">
-                <div class="flex justify-between ">
+                <div class="flex lg:justify-between flex-col lg:flex-row ml-10 lg:ml-0">
                     <div class="">
                         <h1 class="text-4xl font-semibold">P-Ticket</h1>
                     <p class="mt-6">P-Ticket is a digital platform to make your <br> daily commuting better.</p>
                     </div>
-                    <div>
+                    <div class="mt-10 lg:mt-0">
                         <p>Download Our App</p>
                         <img src="./images/playstore.png" alt="">
                     </div>
                 </div>
                 <hr class=" border-dashed  border-[1px] border-gray-600 my-8">
-                <div class="flex justify-between">
+                <div class="flex justify-between flex-col lg:flex-row ml-10 lg:ml-0">
                     <p class="opacity-40">@all rights reserved, P-Ticket services limited.2024</p>
                     <div>
-                        <ul class="flex gap-6"><li>Terms & condition</li>
+                        <ul class="flex gap-6 flex-col lg:flex-row mt-10 lg:mt-0"><li>Terms & condition</li>
                         <li>Return & refund policy</li>
                         <li>Privacy policy</li></ul>
                     </div>
