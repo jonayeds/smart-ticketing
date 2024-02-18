@@ -32,7 +32,7 @@
     
   </head>
   <body class="bg-white text-black">
-    <header class="max-w-[1171px] mx-auto ">
+    <header class="max-w-[1171px] mx-auto " id="mainPageHeader">
         <nav class="flex justify-around items-center py-5 font-raleway">
             <div>
                 <h2 class="font-bold text-3xl ">P-Ticket</h2>
@@ -80,7 +80,7 @@
             </div>
         </div>
     </header>
-    <main class="">
+    <main class="" id="mainPageSections">
         <section class="mt-20 max-w-[1171px] mx-auto flex flex-col items-center ">
             <h1 class="text-center text-4xl font-bold font-raleway">Best offers for you</h1>
             <div class="flex justify-between gap-6 ">
@@ -125,7 +125,7 @@
                                     <p>couch-09-WEB ! AC_Business</p>
                                 </div>
                             </div>
-                            <button class=" flex items-center text-primary gap-2 border-solid border-[1px]  px-2 rounded-lg border-[#1DD100] text-lg bg-[#1cd1002f]"><img src="./images/seat-green.png" alt=""> <span>40</span>seats left</button>
+                            <button class=" flex items-center text-primary gap-2 border-solid border-[1px]  px-2 rounded-lg border-[#1DD100] text-lg bg-[#1cd1002f]"><img src="./images/seat-green.png" alt=""> <span id="remainingSeat">40</span>seats left</button>
                         </div>
                         <div class="mt-10 justify-between  flex">
                             <div class="bg-[#F7F8F8] p-8 rounded-2xl">
@@ -353,7 +353,7 @@
                                 <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
                                     <p>I3</p>
                                 </div>
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center">
+                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
                                     <p>I4</p>
                                 </div>
                             </div>
@@ -362,18 +362,18 @@
                         <div class="flex items-center justify-between mt-3">
                             <p>J</p>
                             <div class="flex gap-2">
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center">
+                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
                                     <p>J1</p>
                                 </div>
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center">
+                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
                                     <p>J2</p>
                                 </div>
                             </div>
                             <div class="flex gap-2">
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center">
+                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
                                     <p>J3</p>
                                 </div>
-                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center">
+                                <div class="bg-gray-200 px-10 py-2 rounded-lg w-28 text-center seat">
                                     <p>J4</p>
                                 </div>
                             </div>
@@ -386,18 +386,28 @@
                     <hr class=" border-dashed  border-[1px] border-gray-300 my-5">
                     <div class="bg-[#F7F8F8] p-6 rounded-xl">
                         <div class="flex justify-between">
-                            <h3>Seat <span>2</span></h3>
+                            <h3>Seat <span class="bg-[#1DD100] text-white px-2 rounded-md" id="seatCount">0</span></h3>
                             <h3>Class</h3>
                             <h3>Price</h3>
                         </div>
                         <hr class=" border-dashed  border-[1px] border-gray-300 my-5 ">
-                        <div>
-                            <div class="flex justify-between mt-2 font-semibold opacity-60">
+                        <div id="priceEntry">
+                            <div class="flex justify-between mt-2 font-semibold opacity-60  hidden" id="priceEntry1">
                                 <h3>C2</h3>
                                 <h3>Economy</h3>
                                 <h3>550</h3>
                             </div>
-                            <div class="flex justify-between mt-2 font-semibold opacity-60">
+                            <div class="flex justify-between mt-2 font-semibold opacity-60  hidden" id="priceEntry2">
+                                <h3>C2</h3>
+                                <h3>Economy</h3>
+                                <h3>550</h3>
+                            </div>
+                            <div class="flex justify-between mt-2 font-semibold opacity-60 hidden " id="priceEntry3" >
+                                <h3>C2</h3>
+                                <h3>Economy</h3>
+                                <h3>550</h3>
+                            </div>
+                            <div class="flex justify-between mt-2 font-semibold opacity-60 hidden" id="priceEntry4">
                                 <h3>C2</h3>
                                 <h3>Economy</h3>
                                 <h3>550</h3>
@@ -406,21 +416,25 @@
                         <hr class=" border-dashed  border-[1px] border-gray-300 my-5">
                         <div class="flex justify-between">
                             <h3>Total price</h3>
-                            <h3>BDT 1100</h3>
+                            <h3>BDT <span id="totalPrice">0</span></h3>
+                        </div>
+                        <div class="flex justify-between hidden mt-3">
+                            <h3>Discounted price</h3>
+                            <h3>BDT <span id="discountedPrice">0</span></h3>
                         </div>
                         <div class="flex mt-3 items-center justify-center relative left-8 ">
-                            <input type="text" class="w-full bg-white p-3 mx-auto rounded-lg" placeholder="Have any coupon?"><button class="text-white bg-[#1DD100] px-4 py-2 rounded-lg relative right-20">Apply</button>
+                            <input type="text" class="w-full bg-white p-3 mx-auto rounded-lg" id="couponCodeEntry" placeholder="Have any coupon?"><button class="text-white bg-[#1DD100] px-4 py-2 rounded-lg relative right-20" id="couponApply">Apply</button>
                         </div>
                         <div class="flex justify-between mt-6">
-                            <h3>Total price</h3>
-                            <h3>BDT 1100</h3>
+                            <h3>Grand Total</h3>
+                            <h3>BDT <span id="grandTotal">0</span></h3>
                         </div>
                     </div>
                     <div class="mt-6 flex flex-col">
                         <label for="" class="mt-6 font-bold">Passenger Name*</label><input type="text" class="bg-white mt-2 p-4 border-[1px] border-gray-200 rounded-lg" required placeholder="Enter Your Name">
-                        <label for="" class="mt-6 font-bold">Phone Number*</label><input type="number" name="" id="" required class="bg-white mt-2 p-4 border-[1px] border-gray-200 rounded-lg">
+                        <label for="" class="mt-6 font-bold ">Phone Number*</label><input type="number" name="" id="phoneNumber" required class="bg-white mt-2 p-4 border-[1px] border-gray-200 rounded-lg">
                         <label for="" class="mt-6 font-bold">Email ID</label><input type="email" name="" id="" class="bg-white mt-2 p-4 border-[1px] border-gray-200 rounded-lg">
-                        <button class="bg-[#1DD100] text-white mt-6 py-3 rounded-xl text-3xl font-raleway font-semibold">Next</button>
+                        <button class="bg-gray-300 text-white mt-6 py-3 rounded-xl text-3xl font-raleway font-semibold" id="nextPageButton">Next</button>
                         <div class="mt-6 flex justify-around">
                             <a href="#" class="underline font-semibold opacity-70">Terms and Conditions</a>
                             <a href="#" class="underline font-semibold opacity-70">Cancellation Policy</a>
@@ -456,7 +470,7 @@
             
         </footer>
     </main>
-    <section class="h-[100vh] bg-[#d8d8d8] flex flex-col items-center justify-center hidden">
+    <section id="secondPage" class="h-[100vh] bg-[#d8d8d8] flex flex-col items-center justify-center hidden">
         <div class="bg-white max-w-max  text-center px-32 py-16 rounded-xl ">
             <img src="./images/success.png" alt="" class="mx-auto">
             <h3 class="text-4xl mt-6">SUCCESS</h3>
