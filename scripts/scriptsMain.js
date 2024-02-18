@@ -38,6 +38,7 @@ for(let i=0;i<seat.length;i++){
                             document.getElementById('discountedPrice').parentElement.parentElement.classList.remove('hidden')
                             
                             document.getElementById('discountedPrice').innerText = totalPrice-grandTotal
+                            document.getElementById('couponApply').parentElement.classList.add('hidden')
                         }
                         else if(seatCount===4){
                             alert('Invalid Coupon Code')
